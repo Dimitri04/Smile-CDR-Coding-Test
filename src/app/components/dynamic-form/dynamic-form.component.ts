@@ -30,7 +30,6 @@ export class DynamicFormComponent implements OnInit {
   onSubmit() {
     if (this.form.valid) {
       this.showSuccess = true;
-      alert('Form Submitted succesfully!!!\n Check the values in browser console.');
         this.payLoad = this.form.getRawValue();
 
       this.answers = Object.keys(this.payLoad).map((key) => {
